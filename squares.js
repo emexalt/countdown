@@ -1,3 +1,8 @@
+/*
+squares.js - generates a Countdown-style letters game puzzle
+em folsom, 2020
+*/
+
 consonantString = 'bbccddddffggghhjkllllmmnnnnnnppqrrrrrrsssstttttvvwwxyyz'.toUpperCase();
 consonants = consonantString.split('');
 vowelString = "AAAAAAAAAEEEEEEEEEEEEIIIIIIIIIOOOOOOOOUUUU";
