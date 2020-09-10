@@ -18,6 +18,14 @@ html {
   grid-template-columns: auto auto auto auto auto auto auto auto auto;
 }
 
+.answer {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 label {
   font-family: sans-serif;
   font-weight: bolder;
