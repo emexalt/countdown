@@ -7,4 +7,4 @@ In this commit:
 + A pleasing circular indicator of whether or not one is correct!
 + Any number of vowels <= 9 can be requested before generating the puzzle.
 + The letters in the puzzle will display in a shuffled order, as if chosen one at a time as is done in the television program.
-+ The availability of letters follows the Scrabble distribution, rather than the published *Countdown* distribution found [here](http://www.thecountdownpage.com/letters.htm); expect this to change soon.
++ The availability of letters follows the Scrabble distribution, rather than the published *Countdown* distribution found [here](http://www.thecountdownpage.com/letters.htm); do not expect this to change soon.
