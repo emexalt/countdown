@@ -21,6 +21,10 @@ dictionaryFile = fetch("./words_alpha.txt")
 
 
 function setCounts() {
+    /*
+    Reads the number of vowels input by the user, calculates the number of
+    consonants, sets the puzzleArray accordingly.
+    */
     let vowelCount = parseInt(document.getElementById("vowel").value);
     let consCount = 9 - vowelCount;
     console.log("Requested vowels: " + vowelCount);
@@ -35,13 +39,19 @@ function setCounts() {
 };
 
 function drawBoard() {
+    /*
+    Displays the contents of puzzleArray on the page.
+    */ 
     for (let index = 1; index < puzzleArray.length + 1; index++){
         document.getElementById("square" + index).innerText = puzzleArray[index - 1];
     }
 }
 
-//in progress; need to integrate check against word-list
 function checkGuess(){
+    /*
+    Checks the user-input guess against the letters on the board,
+    then against the server-stored dictionary by calling checkDictionary().
+    */
     guess = document.getElementById("guess").value.toUpperCase();
     guessArray = guess.split("");
     rightAnswerCounter = 0;
@@ -61,6 +71,10 @@ function checkGuess(){
 }
 
 function checkDictionary() {
+    /*
+    Checks the supplied dictionary file to see if the file contains 
+    the player's guess.
+    */
     guess = document.getElementById("guess").value;
     if (dictionaryString.includes(guess)) {
         console.log("It's a word!");
